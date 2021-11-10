@@ -1,0 +1,26 @@
+package selfProgramming;
+import java.util.Scanner;
+public class StatementIfElse {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		Scanner sc= new Scanner(System.in);
+	
+		System.out.println("Please enter the account balance");
+		double balance=sc.nextDouble();
+	     
+		System.out.println("Please enter the amount");
+		double amount=sc.nextDouble();
+		
+	     if(amount<=balance){
+	    	balance= balance-amount;
+	    	System.out.print("Acct new balance is "+ balance);
+	    	   
+	       }
+	     else {
+		    System.out.print("INSUFFICIENT BALANCE ");
+ 
+	     }
+	}
+
+}
